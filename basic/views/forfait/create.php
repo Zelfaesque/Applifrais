@@ -1,0 +1,20 @@
+<?php
+
+use yii\helpers\Html;
+
+/** @var yii\web\View $this */
+/** @var app\models\Lignefraisforfait $model */
+
+$this->title = 'Saisissez vos frais forfaitaires';
+$this->params['breadcrumbs'][] = ['label' => 'Lignefraisforfaits', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class="lignefraisforfait-create">
+
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <?= $this->render('_form', [
+        'model' => $model,
+    ]) ?>
+
+</div>
